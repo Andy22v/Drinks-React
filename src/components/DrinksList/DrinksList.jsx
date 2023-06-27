@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Drinks from "../Drinks/Drinks";
+import "./DrinksList.css";
 
-const DrinksList = (name, setDrinks) => {
+const DrinksList = ({ name, setProduct }) => {
   const [drinkList, setDrinkList] = useState([]);
 
   useEffect(() => {
@@ -11,11 +12,11 @@ const DrinksList = (name, setDrinks) => {
   }, []);
 
   return (
-    <div>
+    <div className="DrinkList">
       <h2>{name}</h2>
-      <div>
+      <div className="drink-list">
         {drinkList.map((drink) => (
-          <Drinks data={drink} key={drink.idDrink} setDrinks={setDrinks} />
+          <Drinks data={drink} setProduct={setProduct} key={drink.idDrink} />
         ))}
       </div>
     </div>

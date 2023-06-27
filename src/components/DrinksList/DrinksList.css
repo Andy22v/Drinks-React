@@ -1,0 +1,9 @@
+.DrinkList {
+  padding: 0 30px;
+}
+
+.drink-list {
+  display: flex;
+  gap: 12px;
+  overflow-x: scroll;
+}

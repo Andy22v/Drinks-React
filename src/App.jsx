@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Drinks from "./components/Drinks/Drinks";
 import DrinksList from "./components/DrinksList/DrinksList";
+import InfoDrinks from "./components/infoDrinks/InfoDrinks";
 
 function App() {
   const [product, setProduct] = useState([]);
@@ -9,9 +9,14 @@ function App() {
   return (
     <div className="App">
       {product ? (
-        <Drinks product={product} setProduct={setProduct} />
+        <InfoDrinks product={product} setProduct={setProduct} />
       ) : (
-        <DrinksList name="rum" setProduct={setProduct} />
+        <>
+          <DrinksList name="rum" setProduct={setProduct} />
+          <DrinksList name="vodka" setProduct={setProduct} />
+          <DrinksList name="gin" setProduct={setProduct} />
+          <DrinksList name="tequila" setProduct={setProduct} />
+        </>
       )}
     </div>
   );

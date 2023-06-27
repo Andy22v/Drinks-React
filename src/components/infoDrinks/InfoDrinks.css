@@ -1,0 +1,50 @@
+.InfoDrinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.InfoDrinks img {
+  width: 70%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.InfoDrinks p {
+  color: #5e5e5e;
+  font-size: 0.9rem;
+}
+
+.info-drinks h1 p {
+  margin: 8px 0;
+}
+
+.info-text,
+.ingredients,
+.instruction {
+  padding: 0 30px;
+}
+
+.info-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: 0;
+  transition: transform 0.35s;
+  cursor: pointer;
+}

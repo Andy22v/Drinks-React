@@ -1,0 +1,13 @@
+.Drinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.Drinks img {
+  width: 180px;
+  height: 110px;
+  border-radius: 12px;
+  object-fit: cover;
+}

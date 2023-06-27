@@ -1,10 +1,13 @@
-const Drinks = ({ product, setProduct }) => {
-  console.log(product);
+import "./Drinks.css";
+const Drinks = ({ data, setProduct }) => {
+  const onHandleClick = () => {
+    setProduct(data.strDrink);
+  };
+
   return (
-    <div>
-      {product.map((drink) => (
-        <p key={drink.idDrink}>{drink.strDrink}</p>
-      ))}
+    <div className="Drinks" onClick={onHandleClick}>
+      <img src={data.strDrinkThumb} alt={data.strDrink} />
+      <p key={data.idDrink}>{data.strDrink}</p>
     </div>
   );
 };
