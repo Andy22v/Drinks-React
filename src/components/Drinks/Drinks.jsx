@@ -1,8 +1,6 @@
 import "./Drinks.css";
 const Drinks = ({ data, setProduct }) => {
-  const onHandleClick = () => {
-    setProduct(data.strDrink);
-  };
+  const onHandleClick = () => {};
 
   return (
     <div className="Drinks" onClick={onHandleClick}>
