@@ -1,0 +1,28 @@
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homePage {
+  cursor: pointer;
+}
+
+.form {
+  padding: 10px;
+}
+
+.inputForm {
+  padding: 10px;
+  border-end-start-radius: 10px;
+  border-start-start-radius: 10px;
+  background-color: transparent;
+}
+
+.inputBtn {
+  padding: 10px;
+  border-end-end-radius: 10px;
+  border-start-end-radius: 10px;
+  background-color: lightblue;
+}
